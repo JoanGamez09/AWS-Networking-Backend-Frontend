@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nginx API</title>
+</head>
+<body>
+    <h1>Hello from Nginx!</h1>
+    <p id="mensaje">Loading message from API...</p>
+<script> 
+    fetch("http://PUBLIC-IP-FROM-PUBLIC-INSTANCE/api/hello")
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("mensaje").innerText = data.message;
+    })
+    .catch(error => console.error("Error:", error));
+</script>
+</body>
+</html>
