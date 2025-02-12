@@ -30,6 +30,7 @@ In this step, we will create the **Virtual Private Cloud (VPC)**, configure two 
 
 
 - **VPC**: Create a VPC with CIDR block.
+  
   ![image](https://github.com/user-attachments/assets/61bcbbe7-470f-4421-bc84-73f431a4805a)
   ![image](https://github.com/user-attachments/assets/e8f764e7-0402-49fa-aeb4-2580c475eaf5)
 
@@ -47,7 +48,7 @@ In this step, we will create the **Virtual Private Cloud (VPC)**, configure two 
 - Launch an EC2 instance in the VPC created and the public subnet.
 - Ensure this instance has a **public IP** and **Security Group** allowing HTTP/HTTPS access and SSH access from your IP.
 - The instance should generate a new key pair in .pem format to be able to connect via SSH.
-- When connected, perform sudo **apt-get update** and **sudo apt-get upgrade**.
+- When connected, perform **sudo apt-get update** and **sudo apt-get upgrade**.
 - Install **Nginx** on the EC2 instance with **sudo apt install nginx**.
 - Configure Nginx to serve the website which will display the data from the private EC2 instance with **sudo nano /etc/nginx/sites-available/default** (Public Instance/config_public.config).
 
