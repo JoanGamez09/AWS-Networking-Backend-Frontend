@@ -10,7 +10,8 @@ This project involves a network setup where two **Amazon EC2 instances** are dep
 - **RDS Database**: A managed database service (MySQL).
 - **API**: The public EC2 instance communicates with the private EC2 instance via an API to retrieve the data from the RDS database.
 
-![image](https://github.com/user-attachments/assets/785017ee-ae95-4a54-a74e-f393a4f7e573)
+![image](https://github.com/user-attachments/assets/efdc1dcc-8578-47b9-8755-66ead17c55d6)
+
 
   
 
